@@ -1,0 +1,16 @@
+.content {
+	margin-top: 80px;
+}
+.table {
+	margin-top: 20px;
+}
+.glyphicon::before {
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+
+.page-header {
+	margin: 40px 0;
+	border: none;
+}
