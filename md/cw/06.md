@@ -1,0 +1,100 @@
+# 内容回顾
+
+## 一. React中CSS使用方案
+
+### 1.1. 方案一: 内联样式
+
+
+
+
+
+### 1.2. 方案二: 普通的CSS
+
+
+
+
+
+### 1.3. 方案三: CSS Module
+
+
+
+
+
+### 1.4. 方案四: Less配置和使用
+
+
+
+
+
+### 1.5. 方案五: CSS IN JS
+
+* styled-components
+
+
+
+
+
+### 1.6. 类库: classnames
+
+
+
+
+
+## 二. React中Redux的使用
+
+### 2.1. redux的核心概念介绍
+
+* store => state
+* action => 修改state
+* reducer => 纯函数
+
+
+
+### 2.2. redux使用过程演练
+
+#### 2.2.1. 创建Store的过程
+
+* 定义reducer
+* createStore
+
+
+
+
+
+#### 2.2.2. dispatch派发action
+
+
+
+
+
+#### 2.2.3. subscribe定位state
+
+
+
+
+
+#### 2.2.4. 代码的优化过程
+
+* action的创建放到一个函数中
+* 抽取到actionCreators.js文件中
+* 所有的字符串常量放到constants.js文件
+* reducer函数和初始化值, 也放到reducer.js文件
+* index.js中创建store和导出store
+
+
+
+
+
+### 2.3. redux在react使用
+
+* 创建redux对应的store文件夹
+  * 四个文件
+* 组件中使用
+  * componentDidMount生命周期 store.subscribe(() => {}) => this.state => render
+* 组件中修改
+  * store.dispatch(addNumberAction(num))
+
+
+
+
+
